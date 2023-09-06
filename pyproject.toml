@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "cmrxrecon"
+version = "0.1.0"
+description = ""
+authors = ["ziadhemidi <ziad.alhajhemidi@student.uni-luebeck.de>"]
+readme = "README.md"
+license = "MIT"
+
+packages = [{include = "src"}]
+
+[tool.poetry.dependencies]
+python = ">=3.9,<=3.11"
+numpy = "^1.25"
+torch = "2.0.0"
+prodigyopt = "^1.0"
+h5py = "^3.9.0"
+scipy = "^1.11.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
