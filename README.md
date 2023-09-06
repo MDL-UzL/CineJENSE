@@ -10,6 +10,7 @@ This code is written in Python 3.7.4 and uses the following packages:
 * numpy
 * scipy
 * h5py
+* tiny-cuda-nn
 
 See [pyproject.toml](pyproject.toml) for more details.
 
@@ -23,13 +24,13 @@ cd CineJense
 poetry lock && poetry install
 ```
 
-You also have to install tinycudann with the following command:
+You also have to install tinycudann. You can do it using the following command:
 
 ```bash
-pip install git+https://github.com/NVlabs/tiny-cuda-nn/#subdirectory=bindings/torch
+poetry run pip install git+https://github.com/NVlabs/tiny-cuda-nn/#subdirectory=bindings/torch
 ``````
 
-You can find more instructions to tincudann [here](https://github.com/NVlabs/tiny-cuda-nn/tree/master)
+You can find more instructions to tincudann [here](https://github.com/NVlabs/tiny-cuda-nn/tree/master).
 
 ### Usage
 
