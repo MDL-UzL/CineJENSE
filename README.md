@@ -11,7 +11,7 @@ This code is written in Python 3.7.4 and uses the following packages:
 * scipy
 * h5py
 
-See [pyproject.](pyproject.toml)toml](pyproject.toml) for more details.
+See [pyproject.toml](pyproject.toml) for more details.
 
 ### Installation
 
