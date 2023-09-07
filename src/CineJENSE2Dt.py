@@ -49,7 +49,7 @@ encoding_config_csm = {
     'interpolation': 'Linear' }
 
 
-def CINEJENSE_hash_Recon(tstDsKsp, SamMask, DEVICE, dc_weight, reg_weight, MaxIter, LrImg, LrCsm): 
+def CINEJENSE_hash_Recon(tstDsKsp, SamMask, DEVICE, dc_weight, reg_weight, MaxIter, learning_rate): 
     
 
     (nRow, nCol, nFrame, nCoil) = tstDsKsp.shape
@@ -57,8 +57,7 @@ def CINEJENSE_hash_Recon(tstDsKsp, SamMask, DEVICE, dc_weight, reg_weight, MaxIt
     coor = utils.build_coordinate_2Dt_train(nRow, nCol, nFrame, DEVICE).float()
     
     tstDsKsp_tensor = torch.tensor(tstDsKsp, dtype=torch.complex64, device=DEVICE)
-    SamMask = torch.tensor(SamMask, dtype=torch.int, device=DEVICE)
-
+    SamMask_t = torch.tensor(SamMask, dtype=torch.int, device=DEVICE)[:,:,None,:].repeat(1,1,nFrame,1) 
    
     reg_loss_function = losses.TVLoss()
     dc_loss_function = torch.nn.HuberLoss(delta=1.0)
@@ -69,9 +68,9 @@ def CINEJENSE_hash_Recon(tstDsKsp, SamMask, DEVICE, dc_weight, reg_weight, MaxIt
     optimizer = torch.optim.Adam(
         params=[
             {"name": "img_net", "params":  list(IMAGE.parameters())}, 
-            {"name": "sens_net", "params": list(CSM.parameters()), "learning_rate": LrCsm}, 
+            {"name": "sens_net", "params": list(CSM.parameters())}, 
         ],
-        lr=LrImg,
+        lr=learning_rate,
         betas=(0.9, 0.99),
         eps=1e-15,
     )
@@ -92,8 +91,6 @@ def CINEJENSE_hash_Recon(tstDsKsp, SamMask, DEVICE, dc_weight, reg_weight, MaxIt
             csm_norm = torch.sqrt(torch.sum(csm.conj() * csm, -1)).unsqueeze(-1)
     
             csm = csm / (csm_norm + 1e-12)
-            
-            SamMask_t = SamMask[:,:,None,:].repeat(1,1,nFrame,1) 
 
             fft_pre_intensity = FFT(pre_intensity * csm)
 

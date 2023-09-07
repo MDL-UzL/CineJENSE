@@ -10,6 +10,7 @@ if torch.cuda.is_available():
     DEVICE = 'cuda:0'
 else:
     DEVICE = 'cpu'
+    print("Warning: No GPU found, using CPU instead and tiny-cudann is not available.")
     
     
 import scipy.io as sio
@@ -82,11 +83,9 @@ def run_cinejense(file_structure, cardiac_view, output_path):
                 dc_weight = 1.0,
                 reg_weight = 5,
                 MaxIter = 200,
-                LrImg = 1e-2,
-                LrCsm = 1e-2,
+                learning_rate=1e-2,
             )
             
-            pre_img_dc = np.zeros((nx, ny, nframes), np.complex64)
             recon_image[..., _slice, :] = pre_img_dc * NormFactor
 
         result = {"run4ranking": np.abs(recon_image)}
