@@ -2,7 +2,11 @@
 
 This repository corresponds to the STATCOM submission "CineJENSE: Simultaneous Cine MRI Image Reconstruction and Sensitivity Map Estimation using Neural Representations" by Ziad Al-Haj Hemidi, Nora Vogt, Lucile Quilin, Christian Weihsbach, Mattias P. Heinrich, and Julien Oster.
 
-https://github.com/ziadhemidi/CineJense/assets/102248749/7d103486-0b39-43cb-9848-624bd6db96d6
+
+
+https://github.com/ziadhemidi/CineJense/assets/102248749/835c5adf-bf01-4464-b693-be9d3677fe35
+
+
 
 ![CineJENSE Demo](./images/Presentation1.gif "CineJENSE Demo")
 
