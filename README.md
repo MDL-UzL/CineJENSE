@@ -16,7 +16,7 @@ This code is written in Python 3.7.4 and uses the following packages:
 
 See [pyproject.toml](pyproject.toml) for more details.
 
-### Installation
+## Installation
 
 To install the package, run the following command in the terminal:
 
@@ -34,7 +34,7 @@ poetry run pip install git+https://github.com/NVlabs/tiny-cuda-nn/#subdirectory=
 
 You can find more instructions to tincudann [here](https://github.com/NVlabs/tiny-cuda-nn/tree/master).
 
-### Usage
+## Usage
 
 To run the code, you can use the following command:
 
@@ -50,7 +50,7 @@ For example, to run the code on the dataset `TestSet` with the coil `Multicoil` 
 poetry run python3.9 cinejense.py --input /input --output /output --dataset 'TestSet' --coil 'Multicoil' --task 'Cine
 ```
 
-## License and Citation
+## License and Citation (Placeholder)
 
 This code is licensed under the MIT license. If you use this code, please cite the following paper:
 
