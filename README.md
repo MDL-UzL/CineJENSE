@@ -2,6 +2,8 @@
 
 This repository corresponds to the STATCOM submission "CineJENSE: Simultaneous Cine MRI Image Reconstruction and Sensitivity Map Estimation using Neural Representations" by Ziad Al-Haj Hemidi, Nora Vogt, Lucile Quilin, Christian Weihsbach, Mattias P. Heinrich, and Julien Oster.
 
+![CineJENSE Demo](./images/Presentation1.gif "CineJENSE Demo")
+
 ## Dependencies
 
 This code is written in Python 3.7.4 and uses the following packages:
