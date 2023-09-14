@@ -8,7 +8,10 @@ This repository corresponds to the STATCOM submission "CineJENSE: Simultaneous C
 
 ## Results
 
+(:warning: :warning: Still under :construction: :warning: :warning:)
+
 Short axis view for acceleration factor 4:
+
 ![CineJENSE Demo](./images/Presentation1.gif "CineJENSE Demo")
 
 ## Dependencies
