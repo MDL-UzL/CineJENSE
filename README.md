@@ -1,6 +1,6 @@
 # CineJENSE - CMRxRecon 2023
 
-This repository corresponds to the STATCOM submission "CineJENSE: Simultaneous Cine MRI Image Reconstruction and Sensitivity Map Estimation using Neural Representations" by Ziad Al-Haj Hemidi, Nora Vogt, Lucile Quilin, Christian Weihsbach, Mattias P. Heinrich, and Julien Oster.
+This repository corresponds to the STATCOM submission "CineJENSE: Simultaneous Cine MRI Image Reconstruction and Sensitivity Map Estimation using Neural Representations" by Ziad Al-Haj Hemidi, Nora Vogt, Lucile Quillien, Christian Weihsbach, Mattias P. Heinrich, and Julien Oster.
 
 ## The CineJENSE Model
 
@@ -67,7 +67,7 @@ This code is licensed under the MIT license. If you use this code, please cite t
 ``` latex
 @article{al2023cinejense,
   title={CineJENSE: Simultaneous Cine MRI Image Reconstruction and Sensitivity Map Estimation using Neural Representations},
-  author={Al-Haj Hemidi, Ziad and Vogt, Nora and Quilin, Lucile and Weihsbach, Christian and Heinrich, Mattias P and Oster, Julien},
+  author={Al-Haj Hemidi, Ziad and Vogt, Nora and Quillien, Lucile and Weihsbach, Christian and Heinrich, Mattias P and Oster, Julien},
   journal={arXiv preprint arXiv:xxxxxxx},
   year={2023}
 }   
