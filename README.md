@@ -65,10 +65,12 @@ poetry run python3.9 cinejense.py --input /input --output /output --dataset 'Tes
 This code is licensed under the MIT license. If you use this code, please cite the following paper:
 
 ``` latex
-@article{al2023cinejense,
-  title={CineJENSE: Simultaneous Cine MRI Image Reconstruction and Sensitivity Map Estimation using Neural Representations},
+@inproceedings{al2023cinejense,
+  title={CineJENSE: Simultaneous Cine MRI Image Reconstruction and Sensitivity Map Estimation Using Neural Representations},
   author={Al-Haj Hemidi, Ziad and Vogt, Nora and Quillien, Lucile and Weihsbach, Christian and Heinrich, Mattias P and Oster, Julien},
-  journal={arXiv preprint arXiv:xxxxxxx},
-  year={2023}
-}   
+  booktitle={International Workshop on Statistical Atlases and Computational Models of the Heart},
+  pages={467--478},
+  year={2023},
+  organization={Springer}
+}  
 ```
