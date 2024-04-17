@@ -60,7 +60,7 @@ For example, to run the code on the dataset `TestSet` with the coil `Multicoil` 
 poetry run python3.9 cinejense.py --input /input --output /output --dataset 'TestSet' --coil 'Multicoil' --task 'Cine
 ```
 
-## License and Citation (Placeholder)
+## License and Citation
 
 This code is licensed under the MIT license. If you use this code, please cite the following paper:
 
