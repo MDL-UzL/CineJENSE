@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "cmrxrecon"
+name = "cinejense"
 version = "0.1.0"
 description = ""
 authors = ["ziadhemidi <ziad.alhajhemidi@student.uni-luebeck.de>"]
@@ -11,7 +11,7 @@ packages = [{include = "src"}]
 [tool.poetry.dependencies]
 python = ">=3.9,<=3.11"
 numpy = "^1.25"
-torch = "2.0.0"
+torch = "^2.0.0"
 prodigyopt = "^1.0"
 h5py = "^3.9.0"
 scipy = "^1.11.1"
