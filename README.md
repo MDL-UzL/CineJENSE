@@ -49,7 +49,7 @@ You can find more instructions to tincudann [here](https://github.com/NVlabs/tin
 To run the code, you can use the following command:
 
 ```bash
-poetry run python3.9 cinejense.py --input <input_file> --output <output_file> --dataset <dataset_name> --coil <coil_name> --task <task_name> 
+poetry run python3.9 run_inference.py --input <input_file> --output <output_file> --dataset <dataset_name> --coil <coil_name> --task <task_name> 
 ```
 
 where `<input_file>` is the path to the input file, `<output_file>` is the path to the output file, `<dataset_name>` is the name of the dataset, `<coil_name>` is the name of the coil and `<task_name>` is the name of the task.
@@ -57,7 +57,7 @@ where `<input_file>` is the path to the input file, `<output_file>` is the path 
 For example, to run the code on the dataset `TestSet` with the coil `Multicoil` and the task `Cine`, you can use the following command:
 
 ```bash
-poetry run python3.9 cinejense.py --input /input --output /output --dataset 'TestSet' --coil 'Multicoil' --task 'Cine
+poetry run python3.9 run_inference.py --input /input --output /output --dataset 'TestSet' --coil 'Multicoil' --task 'Cine
 ```
 
 ## License and Citation
